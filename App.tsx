@@ -3,14 +3,14 @@ import { StyleSheet, Text } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 const App = () => (
-	<GestureHandlerRootView style={styles.container}>
+	<GestureHandlerRootView style={styles.root}>
 		<StatusBar style="dark" />
 		<Text>Open up App.js to start working on your app!</Text>
 	</GestureHandlerRootView>
 )
 
 const styles = StyleSheet.create({
-	container: {
+	root: {
 		width: '100%',
 		height: '100%',
 		justifyContent: 'center',
