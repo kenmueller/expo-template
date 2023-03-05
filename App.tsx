@@ -1,12 +1,11 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text } from 'react-native'
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import { StyleSheet, Text, View } from 'react-native'
 
 const App = () => (
-	<GestureHandlerRootView style={styles.root}>
+	<View style={styles.root}>
 		<StatusBar style="dark" />
 		<Text>Open up App.js to start working on your app!</Text>
-	</GestureHandlerRootView>
+	</View>
 )
 
 const styles = StyleSheet.create({
