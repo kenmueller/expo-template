@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { Stack } from 'expo-router'
 
-import theme from '../lib/theme'
+import theme from '@/lib/theme'
 
 const HomeScreen = () => (
 	<View style={styles.root}>
