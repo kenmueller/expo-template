@@ -11,3 +11,5 @@ npm-debug.*
 web-build/
 .DS_Store
 .metro-health-check*
+.env
+*google-service-account.json

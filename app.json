@@ -1,28 +1,38 @@
 {
 	"expo": {
-		"name": "react-native-template",
-		"slug": "react-native-template",
+		"name": "expo-template",
+		"description": "expo-template",
+		"slug": "expo-template",
+		"scheme": "expo-template",
 		"version": "1.0.0",
 		"orientation": "portrait",
-		"icon": "./assets/icon.png",
+		"icon": "assets/icon.png",
 		"userInterfaceStyle": "light",
 		"splash": {
-			"image": "./assets/splash.png",
+			"image": "assets/splash.png",
 			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
+			"backgroundColor": "#1c1c1e"
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
+			"buildNumber": "1.0.0",
+			"bundleIdentifier": "com.example.expo-template",
 			"supportsTablet": true
 		},
 		"android": {
+			"versionCode": 1,
+			"package": "com.example.expo-template",
 			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive-icon.png",
-				"backgroundColor": "#ffffff"
+				"foregroundImage": "assets/adaptive-icon.png",
+				"backgroundColor": "#1c1c1e"
 			}
 		},
 		"web": {
-			"favicon": "./assets/favicon.png"
+			"bundler": "metro",
+			"favicon": "assets/favicon.png"
+		},
+		"runtimeVersion": {
+			"policy": "sdkVersion"
 		}
 	}
 }
