@@ -28,8 +28,7 @@
 			}
 		},
 		"web": {
-			"bundler": "metro",
-			"favicon": "assets/favicon.png"
+			"bundler": "metro"
 		},
 		"runtimeVersion": {
 			"policy": "sdkVersion"

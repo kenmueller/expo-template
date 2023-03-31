@@ -1,0 +1,23 @@
+{
+	"background_color": "white",
+	"description": "expo-template",
+	"display": "standalone",
+	"lang": "en",
+	"name": "expo-template",
+	"short_name": "expo-template",
+	"start_url": "/?utm_source=web_app_manifest",
+	"orientation": "portrait",
+	"related_applications": [
+		{
+			"platform": "itunes",
+			"url": "expo-template",
+			"id": "io.matchwho.matchwho"
+		},
+		{
+			"platform": "play",
+			"url": "expo-template",
+			"id": "io.matchwho.matchwho"
+		}
+	],
+	"prefer_related_applications": true
+}
