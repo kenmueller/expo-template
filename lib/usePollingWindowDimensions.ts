@@ -3,9 +3,12 @@ import { useEffect, useState } from 'react'
 import { Dimensions, useWindowDimensions } from 'react-native'
 
 import _Dimensions from './dimensions'
+import useNewEffect from './useNewEffect'
+
+const POLL_INTERVAL = 500
 
 /** Also polls window dimensions. */
-const useFixedWindowDimensions = () => {
+const usePollingWindowDimensions = () => {
 	const [dimensions, setDimensions] = useState<_Dimensions>(
 		Dimensions.get('window')
 	)
@@ -13,7 +16,7 @@ const useFixedWindowDimensions = () => {
 	const _dimensions = useWindowDimensions()
 
 	// Grab dimensions from useWindowDimensions
-	useEffect(() => {
+	useNewEffect(() => {
 		setDimensions(_dimensions)
 	}, [_dimensions, setDimensions])
 
@@ -27,7 +30,7 @@ const useFixedWindowDimensions = () => {
 					? dimensions
 					: newDimensions
 			)
-		}, 500)
+		}, POLL_INTERVAL)
 
 		return () => {
 			clearInterval(interval)
@@ -37,4 +40,4 @@ const useFixedWindowDimensions = () => {
 	return dimensions
 }
 
-export default useFixedWindowDimensions
+export default usePollingWindowDimensions
