@@ -1,11 +1,11 @@
-import { useEffect } from 'react'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
+import { useEffect } from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-import unlockOrientationIfTablet from '@/lib/unlockOrientationIfTablet'
 import alertError from '@/lib/error/alert'
 import SCREEN_OPTIONS from '@/lib/screen/options'
+import unlockOrientationIfTablet from '@/lib/unlockOrientationIfTablet'
 
 const RootLayout = () => {
 	useEffect(() => {

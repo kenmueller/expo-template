@@ -1,6 +1,6 @@
+import equal from 'deep-equal'
 import { useEffect, useState } from 'react'
 import { Dimensions, useWindowDimensions } from 'react-native'
-import equal from 'deep-equal'
 
 import _Dimensions from './dimensions'
 
